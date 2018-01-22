@@ -1,0 +1,19 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpdk/pdk": "dev-master",
+        "slim/slim": "^3.9",
+        "nxp/math-executor": "^0.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\":  "services/app",
+            "sum\\":  "services/sum",
+            "minus\\":  "services/minus",
+            "tests\\":  "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    }
+}

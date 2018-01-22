@@ -1,0 +1,35 @@
+version: '2'
+services:
+  operation.com:
+     build: .
+     environment:
+       - APP_ENV=prod
+     ports:
+        - 8082:80
+     command: php -S 0.0.0.0:80 /app/services/app/index.php
+
+  plus.operation.com:
+     build: .
+     environment:
+       - APP_ENV=prod
+     command: php -S 0.0.0.0:80 /app/services/plus/index.php
+  minus.operation.com:
+     build: .
+     environment:
+       - APP_ENV=prod
+     command: php -S 0.0.0.0:80 /app/services/minus/index.php
+  degree.operation.com:
+     build: .
+     environment:
+       - APP_ENV=prod
+     command: php -S 0.0.0.0:80 /app/services/degree/index.php
+  division.operation.com:
+     build: .
+     environment:
+       - APP_ENV=prod
+     command: php -S 0.0.0.0:80 /app/services/division/index.php
+  multiply.operation.com:
+     build: .
+     environment:
+       - APP_ENV=prod
+     command: php -S 0.0.0.0:80 /app/services/multiply/index.php
